@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="g.png">
+    <link href="google.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <div id="orta">
+        <div id="logo">
+            <img src="google.png" width="280">
+        </div>
+        <div class="arama">
+           
+                <input type="text" name="q"class="s-input" id="searchQuery">
+                <img src="arama.png" class="search-icon">
+                <img src="ses.png" class="vs-icon">
+                <img src="klavye.png" class="keyboard-icon">
+                <button type="submit" onclick="searchGoogle()" class="button" >Google Search</button>
+                <button onclick="feelingLucky()" class="button">I'm Feeling Lucky</button>
+            
+        </div>
+
+        <script>
+            function searchGoogle(){
+                var query = document.getElementById('searchQuery').value;
+                if (query.trim() == '') {
+                    alert("Lütfen bir arama terimi girin.");
+                    return;
+                }
+                window.location.href = 'http://www.google.com/search?q='+ encodeURIComponent(query)
+            }
+        </script>
+        
+        
+        <script>
+            function feelingLucky() {
+                var query = document.getElementById('searchQuery').value;
+                if (query.trim() == '') {
+                    alert("Lütfen bir arama terimi girin.");
+                    return;
+                }
+                window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query) + "&btnI";
+                
+            }
+        </script>
+
+
+</body>
+</html>

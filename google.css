@@ -1,0 +1,82 @@
+body {
+  margin: 0px auto;
+}
+
+#orta {
+  margin-top: 90px;
+}
+
+#orta #logo {
+  text-align: center;
+}
+
+#orta .arama {
+  width: 580px;
+  margin: 0px auto;
+  position: relative;
+  margin-top: 8px;
+  text-align: center;
+}
+
+#orta .arama .s-input {
+  display: block;
+  border: 1px solid #ddd;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  padding: 13px;
+  padding-left: 45px;
+  border-radius: 25px;
+  width: 100%;
+  outline: none;
+}
+
+#orta .arama .s-input:hover {
+  -webkit-box-shadow: 1px 1px 5px grey;
+          box-shadow: 1px 1px 5px grey;
+}
+
+#orta .arama .search-icon {
+  width: 20px;
+  opacity: 0.4;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+
+#orta .arama .vs-icon {
+  width: 18px;
+  position: absolute;
+  top: 13px;
+  right: -35px;
+}
+
+#orta .arama .vs-icon:hover {
+  opacity: 0.8;
+}
+
+#orta .arama .keyboard-icon {
+  width: 30px;
+  position: absolute;
+  top: 13px;
+  right: -5px;
+}
+
+#orta .arama .keyboard-icon:hover {
+  opacity: 0.8;
+}
+
+#orta .arama button {
+  border: 1px solid transparent;
+  padding: 9px 15px;
+  color: black;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+#orta .arama button:hover {
+  border: 1px solid #aaa;
+}
